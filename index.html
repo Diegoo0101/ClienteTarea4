@@ -1,0 +1,32 @@
+<!DOCTYPE html5>
+<html>
+<head>
+    <title>Gestor de Contactos</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+    <h1>Gestor de Contactos</h1>
+
+    <i>Los que tengan asterisco (*) son obligatorios de rellenar</i>
+    <form id="contactForm">
+        <label for="name">*Nombre:</label>
+        <input type="text" id="name">
+        <span id="nameError" class="error"></span>
+
+        <label for="phone">*Teléfono:</label>
+        <input type="text" id="phone">
+        <span id="phoneError" class="error"></span>
+
+        <label for="image">Imagen:</label>
+        <input type="text" id="image" placeholder="Introduzca una url válida">
+        <br/>
+        <br/>
+        
+        <button type="submit">Agregar Contacto</button>
+    </form>
+    
+    <ul id="contactList"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
